@@ -25,17 +25,17 @@
 
         <div class="col-md-3" >
           <label for="email" class="form-label">Email address</label>
-          <input type="email" class="form-control" name="email" id="email" required placeholder="Enter your Email Address" >
+          <input type="email" class="form-control" name="email" id="email" placeholder="Enter your Email Address" required >
         </div>
 
         <div class="col-md-3" >
           <label for="job_title" class="form-label">Job Title</label>
-          <input type="text" class="form-control" name="job_title" id="job_title" required placeholder="Enter your Job title" >
+          <input type="text" class="form-control" name="job_title" id="job_title" placeholder="Enter your Job title" required >
         </div>
 
         <div class="col-md-3" >
           <label for="telephone" class="form-label">Telephone</label>
-          <input type="tel" class="form-control" name="telephone" id="telephone" required placeholder="Enter your Number">
+          <input type="tel" class="form-control" name="telephone" id="telephone" placeholder="Enter your Number" required>
         </div>
 
         <div class="col-12">
@@ -83,7 +83,7 @@ while ($row = mysqli_fetch_assoc($select)) {
                 <td class="" ><a class="btn btn-outline-success  col-12" href="edit.php?GetID=<?php echo $id ?>" role="button">Edit </a></td>
                 <td class="" ><a class="btn btn-outline-danger col-12" href="delete.php?Del=<?php echo $id ?>" role="button">Delete</a></td>
               </tr>
-              
+
           <?php
 }
 ?>
