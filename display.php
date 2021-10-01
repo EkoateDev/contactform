@@ -12,11 +12,10 @@
     <title>Contact List</title>
   </head>
   <body>
-     <!-- <center> -->
 
     <div class="container justify-content-md-center">
       <h1>Display user list using HTML and PHP</h1>
-      <!-- -->
+
       <form class="row gy-2 gx-3 align-items-center" action="actionhere.php" method="POST">
         <div class="col-md-3" >
           <label for="name" class="form-label">Name</label>
@@ -80,8 +79,12 @@ while ($row = mysqli_fetch_assoc($select)) {
                 <td class="table-outline-secondary" id="email"><?php echo $row['email']; ?></td>
                 <td class="table-outline-secondary" id="job_title"><?php echo $row['job_title']; ?></td>
                 <td class="table-outline-secondary" id="telephone"><?php echo $row['telephone']; ?></td>
-                <td class="" ><a class="btn btn-outline-success  col-12" href="edit.php?GetID=<?php echo $id ?>" role="button">Edit </a></td>
-                <td class="" ><a class="btn btn-outline-danger col-12" href="delete.php?Del=<?php echo $id ?>" role="button">Delete</a></td>
+                <td class="" >
+                    <a class="btn btn-outline-success  col-12" href="edit.php?id=<?php echo $id ?>" role="button">Edit </a>
+                </td>
+                <td class="" >
+                    <a class="btn btn-outline-danger col-12" href="delete.php?id=<?php echo $id ?>" role="button">Delete</a>
+                </td>
               </tr>
 
           <?php
@@ -92,13 +95,10 @@ while ($row = mysqli_fetch_assoc($select)) {
 
       <?php $conn->close(); // Close connection ?>
 
-
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
       <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-      <!-- <script type="text/javascript" src="emscript.js"></script> -->
       <script src="modifyrecords.js"></script>
 
-      <!-- </center> -->
-    </div>
+
   </body>
 </html>
