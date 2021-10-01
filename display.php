@@ -44,45 +44,6 @@
       </form>
     </div><br>
 
-    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">New Contact details</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form class="edit_row" action="update.php" method="POST">
-                        <div class="mb-3">
-                            <label for="name" class="col-form-label">Name:</label>
-                            <input type="text" name="name" class="form-control" id="newname" >
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="col-form-label">Email:</label>
-                            <input type="email" name="email" class="form-control" id="newemail" >
-                        </div>
-                        <div class="mb-3">
-                            <label for="job_title" class="col-form-label">Job Title:</label>
-                            <input type="text" name="job_title" class="form-control" id="newjob_title" >
-                        </div>
-                        <div class="mb-3">
-                            <label for="telephone" class="col-form-label">Telephone:</label>
-                            <input type="tel" name="telephone" class="form-control" id="newtelephone" >
-                        </div>
-                        <div class="col-12">
-                         <button type="submit" id="edit_row" class="btn btn-outline-success" >Save</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-warning" data-bs-dismiss="modal">Exit</button>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-
-
     <div class="container">
       <table id="cus_table" class="table table-striped table table-bordered" >
         <thead class="">
@@ -120,15 +81,9 @@ while ($row = mysqli_fetch_assoc($select)) {
                 <td class="table-outline-secondary" id="job_title"><?php echo $row['job_title']; ?></td>
                 <td class="table-outline-secondary" id="telephone"><?php echo $row['telephone']; ?></td>
                 <td class="" ><a class="btn btn-outline-success  col-12" href="edit.php?GetID=<?php echo $id ?>" role="button">Edit </a></td>
-                <td class="" ><a class="btn btn-outline-danger col-12" href="#" role="button">Delete</a></td>
-
-                <td>
-                <!-- <input type='button' class="btn btn-outline-dark w-25 " id="edit_button<?php echo $row['id']; ?>" value="edit" onclick="edit_row('<?php echo $row['id']; ?>');"> -->
-                <!-- <button type="button" class="btn btn-outline-success w-25" id="edit_button" ?GetID=<?php echo $row['id']; ?> data-bs-toggle="modal" data-bs-target="#exampleModal"  data-bs-whatever="@mdo">Edit</button>
-                <input type='button' class="btn btn-outline-danger w-15" id="delete_button<?php echo $row['id']; ?>" value="delete" onclick="delete_row('<?php echo $row['id']; ?>');"> -->
-                </td>
+                <td class="" ><a class="btn btn-outline-danger col-12" href="delete.php?Del=<?php echo $id ?>" role="button">Delete</a></td>
               </tr>
-
+              
           <?php
 }
 ?>
