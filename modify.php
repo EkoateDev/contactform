@@ -35,4 +35,3 @@ if (isset($_POST['insert_row'])) {
     echo mysqli_insert_id($mysqli);
     exit();
 }
-?>

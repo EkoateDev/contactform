@@ -76,8 +76,6 @@ function insert_row() {
 	let job_title = document.getElementById('new_job_title').value;
 	let telephone = document.getElementById('new_telephone').value;
 
-
-
 	$.ajax({
 		type: 'post',
 		url: 'modify.php',
