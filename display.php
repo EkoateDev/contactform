@@ -30,12 +30,12 @@
 
             <div class="col-md-3">
                 <label for="job_title" class="form-label">Job Title</label>
-                <input type="text" class="form-control" name="job_title" id="job_title" placeholder="Enter your Job title" required>
+                <input type="text" class="form-control" name="job_title" id="job_title" placeholder="Enter your Job title" >
             </div>
 
             <div class="col-md-3">
                 <label for="telephone" class="form-label">Telephone</label>
-                <input type="tel" class="form-control" name="telephone" id="telephone" placeholder="Enter your Number" required>
+                <input type="tel" class="form-control" name="telephone" id="telephone" placeholder="Enter your Number" >
             </div>
 
             <div class="col-12">
@@ -96,10 +96,10 @@
 
         <?php $conn->close(); // Close connection 
         ?>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-        <script src="modifyrecords.js"></script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="modifyrecords.js"></script>
 
 
 </body>

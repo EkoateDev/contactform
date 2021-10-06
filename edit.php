@@ -50,7 +50,7 @@ if (isset($_GET['id'])) {
 
             <div class="col-md-3">
                 <label for="job_title" class="form-label">Job Title</label>
-                <input type="text" class="form-control" name="job-title" id="job-title" placeholder="Enter your Job title" value="<?php echo $jobTitle ?>">
+                <input type="text" class="form-control" name="job_title" id="job-title" placeholder="Enter your Job title" value="<?php echo $jobTitle ?>">
             </div>
 
             <div class="col-md-3">
