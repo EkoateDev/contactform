@@ -27,8 +27,6 @@ if ($name != '' && $email != '') {
 
 if ($conn->query($sql) === true) {
     header("Location:display.php");
-    // header used to refresch the page.
-
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
