@@ -21,7 +21,6 @@ if (isset($_GET['telephone'])) {
     $telephone = $_GET['telephone'];
 }
 
-
 $query = "SELECT * FROM contact WHERE id='" . $id . "'";
 $select = mysqli_query($conn, $query);
 
