@@ -3,20 +3,36 @@
 require_once "dbconnect.php";
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-    $query = "SELECT * FROM contact WHERE id='" . $id . "'";
-    $select = mysqli_query($conn, $query);
-
-    $row = mysqli_fetch_assoc($select);
-    $id = $row['id'];
-    $name = $row['name'];
-    $email = $row['email'];
-    $jobTitle = $row['job_title'];
-    $telephone = $row['telephone'];
 }
 
+if (isset($_GET['name'])) {
+    $name = $_GET['name'];
+}
+
+if (isset($_GET['email'])) {
+    $email = $_GET['email'];
+}
+
+if (isset($_GET['job_title'])) {
+    $jobTitle = $_GET['job_title'];
+}
+
+if (isset($_GET['telephone'])) {
+    $telephone = $_GET['telephone'];
+}
+
+
+$query = "SELECT * FROM contact WHERE id='" . $id . "'";
+$select = mysqli_query($conn, $query);
+
+$row = mysqli_fetch_assoc($select);
+$id = $row['id'];
+$name = $row['name'];
+$email = $row['email'];
+$jobTitle = $row['job_title'];
+$telephone = $row['telephone'];
+
 ?>
-
-
 
 <!doctype html>
 <html lang="en">
