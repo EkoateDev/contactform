@@ -31,10 +31,26 @@ if ($name != '' && $email != '') {
     $query = "UPDATE contact SET name='" . $name . "',email='" . $email . "',job_title='" . $jobTitle . "',telephone='" . $telephone . "' WHERE id='" . $id . "'";
 }
 
+if($name == ''){
+    echo "<script>
+    alert('Do not Leave Name empty');
+    window.location.href='edit.php';
+    </script>";
+}
+if($email == ''){
+    echo "<script>
+    alert('Do not Leave an empty email field');
+    window.location.href='edit.php';
+    </script>";
+}
+
 $select = mysqli_query($conn, $query);
 
 if ($select) {
-    header("Location:display.php");
+    echo "<script>
+    alert('Updated successfully');
+    window.location.href='display.php';
+    </script>";
 } else {
     echo 'Kindly check your query';
 }

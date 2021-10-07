@@ -26,7 +26,10 @@ if ($name != '' && $email != '') {
 }
 
 if ($conn->query($sql) === true) {
-    header("Location:display.php");
+    echo "<script>
+    alert('New Contact added');
+    window.location.href='display.php';
+    </script>";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }

@@ -25,6 +25,7 @@ $query = "SELECT * FROM contact WHERE id='" . $id . "'";
 $select = mysqli_query($conn, $query);
 
 $row = mysqli_fetch_assoc($select);
+
 $id = $row['id'];
 $name = $row['name'];
 $email = $row['email'];

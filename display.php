@@ -15,7 +15,7 @@
 <body>
 
     <div class="container justify-content-md-center">
-        <h1>Display user list using HTML and PHP</h1>
+        <h1>Display user list using HTML and PHP</h1><br>
 
         <form class="row gy-2 gx-3 align-items-center" action="actionhere.php" method="POST">
             <div class="col-md-3">
