@@ -1,7 +1,7 @@
 <?php
 require_once 'dbconnect.php';
 
-// get the post records
+// declaring variables for verification
 $name = '';
 $email = '';
 $jobTitle = '';

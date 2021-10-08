@@ -1,7 +1,8 @@
 <?php
-
 require_once "dbconnect.php";
 
+// declaring variables for verification
+$id = ''; 
 $name = '';
 $email = '';
 $jobTitle = '';

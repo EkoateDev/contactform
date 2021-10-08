@@ -1,6 +1,9 @@
 <?php
-
 require_once 'dbconnect.php';
+
+// declaring variables for verification
+$id = '';
+
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 }
