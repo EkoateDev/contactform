@@ -33,14 +33,14 @@ if ($name != '' && $email != '') {
 
 if($name == ''){
     echo "<script>
-    alert('Do not Leave Name empty');
-    window.location.href='edit.php';
+    alert('Do not Leave Name empty Try Again');
+    window.location.href='display.php';
     </script>";
 }
 if($email == ''){
     echo "<script>
-    alert('Do not Leave an empty email field');
-    window.location.href='edit.php';
+    alert('Do not Leave an empty email field Try Again');
+    window.location.href='display.php';
     </script>";
 }
 

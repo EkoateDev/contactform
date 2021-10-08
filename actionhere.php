@@ -14,9 +14,11 @@ if (isset($_POST['name'])) {
 if (isset($_POST['email'])) {
     $email = $_POST['email'];
 }
+
 if (isset($_POST['job_title'])) {
     $jobTitle = $_POST['job_title'];
 }
+
 if (isset($_POST['telephone'])) {
     $telephone = $_POST['telephone'];
 }

@@ -30,12 +30,12 @@
 
             <div class="col-md-3">
                 <label for="job_title" class="form-label">Job Title</label>
-                <input type="text" class="form-control" name="job_title" id="job_title" placeholder="Enter your Job title" >
+                <input type="text" class="form-control" name="job_title" id="job_title" placeholder="Enter your Job title">
             </div>
 
             <div class="col-md-3">
                 <label for="telephone" class="form-label">Telephone</label>
-                <input type="tel" class="form-control" name="telephone" id="telephone" placeholder="Enter your Number" >
+                <input type="tel" class="form-control" name="telephone" id="telephone" placeholder="Enter your Number">
             </div>
 
             <div class="col-12">
@@ -51,7 +51,7 @@
                     <th scope="col">ID</th>
                     <th scope="col">Name</th>
                     <th scope="col">Email</th>
-                    <th scope="col">Job_Title</th>
+                    <th scope="col">JobTitle</th>
                     <th scope="col">Telephone</th>
                     <th scope="col">Edit</th>
                     <th scope="col">Delete</th>
@@ -67,15 +67,10 @@
 
                 while ($row = mysqli_fetch_assoc($select)) {
                     $id = $row['id'];
-                    $name = $row['name'];
-                    $email = $row['email'];
-                    $jobTitle = $row['job_title'];
-                    $telephone = $row['telephone'];
-
                 ?>
 
                     <tr id="row>">
-                        <td class="table-outline-secondary" id=""><?php echo $row['id']; ?></td>
+                        <td class="table-outline-secondary" id=""><?php echo $id; ?></td>
                         <td class="table-outline-secondary" id="name"><?php echo $row['name']; ?></td>
                         <td class="table-outline-secondary" id="email"><?php echo $row['email']; ?></td>
                         <td class="table-outline-secondary" id="job-title"><?php echo $row['job_title']; ?></td>

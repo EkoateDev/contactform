@@ -1,6 +1,10 @@
 <?php
 
 require_once "dbconnect.php";
+
+$id ='';
+$name ='';
+
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 }
