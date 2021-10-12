@@ -45,7 +45,7 @@
     </div><br>
 
     <div class="container">
-        <table id="cus_table" class="table table-striped table table-bordered">
+        <table id="customer-table" class="table table-striped table table-bordered">
             <thead class="">
                 <tr>
                     <th scope="col">ID</th>
@@ -67,9 +67,10 @@
 
                 while ($row = mysqli_fetch_assoc($select)) {
                     $id = $row['id'];
+                    $tableRow = 'row' . $id;
                 ?>
 
-                    <tr id="row>">
+                    <tr id="<?php echo $tableRow; ?>">
                         <td class="table-outline-secondary" id=""><?php echo $id; ?></td>
                         <td class="table-outline-secondary" id="name"><?php echo $row['name']; ?></td>
                         <td class="table-outline-secondary" id="email"><?php echo $row['email']; ?></td>
