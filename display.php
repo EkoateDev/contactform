@@ -71,16 +71,16 @@
                 ?>
 
                     <tr id="<?php echo $tableRow; ?>">
-                        <td class="table-outline-secondary" id=""><?php echo $id; ?></td>
-                        <td class="table-outline-secondary" id="name"><?php echo $row['name']; ?></td>
-                        <td class="table-outline-secondary" id="email"><?php echo $row['email']; ?></td>
-                        <td class="table-outline-secondary" id="job-title"><?php echo $row['job_title']; ?></td>
-                        <td class="table-outline-secondary" id="telephone"><?php echo $row['telephone']; ?></td>
+                        <td class="table-outline-secondary"><?php echo $id; ?></td>
+                        <td class="table-outline-secondary"><?php echo $row['name']; ?></td>
+                        <td class="table-outline-secondary"><?php echo $row['email']; ?></td>
+                        <td class="table-outline-secondary"><?php echo $row['job_title']; ?></td>
+                        <td class="table-outline-secondary"><?php echo $row['telephone']; ?></td>
                         <td class="">
-                            <a class="btn btn-outline-success  col-12" href="edit.php?id=<?php echo $id ?>" role="button">Edit </a>
+                            <a class="btn btn-outline-success  col-12" href="edit.php?id=<?php echo $id ?>">Edit </a>
                         </td>
                         <td class="">
-                            <a class="btn btn-outline-danger col-12" href="delete.php?id=<?php echo $id ?>" role="button">Delete</a>
+                            <a class="btn btn-outline-danger col-12" href="delete.php?id=<?php echo $id ?>">Delete</a>
                         </td>
                     </tr>
 

@@ -1,3 +1,12 @@
+function delete_button(){
+let txttoshow = "Do not delete unless you are sure";
+document.getElementById(delhere).addEventListener(mouseover);
+document.getElementById(delhere) = txttoshow;
+}
+
+
+
+
 function edit_row(id) {
 	let name = document.getElementById('name' + id).innerHTML;
 	let email = document.getElementById('email' + id).innerHTML;
